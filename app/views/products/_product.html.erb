@@ -1,12 +1,15 @@
 <div id="<%= dom_id product %>">
-  <p>
-    <strong>Name:</strong>
-    <%= product.name %>
-  </p>
 
-  <p>
-    <strong>Price:</strong>
-    <%= product.price %>
-  </p>
-
+  <div class="card">
+  <div class="card-header">
+  <strong>Name:</strong>
+  <%= product.name %>
+  </div>
+  <div class="card-body">
+    <div class="d-flex">
+     <h5 class="card-title"><strong>Price:</strong></h5>
+     <p class="card-text"><%= product.price %></p>
+    </div>
+  </div>
+</div>
 </div>
